@@ -7,8 +7,10 @@ console.log(calcularHipotenusa(4, 3));
 
 //2.2 numero aleatório
 
-function gerarNumeroAleatorio(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
+function  gerarNumeroAleatorio(min, max) {
+  if(max > min ){
+      return Math.random() * (max - min) + min;
+  }
 }
 
 console.log(gerarNumeroAleatorio(0, 20));
