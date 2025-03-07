@@ -1,17 +1,21 @@
 //1.1- Obter Data Atual:
 let date = new Date();
 
-    function obterDataAtual(date) {
-        console.log(`${date.getDate()} / 0${date.getMonth() +1} / ${date.getFullYear()}`);
-    }
+function obterDataAtual(date) {
+  console.log(
+    `${date.getDate()} / 0${date.getMonth() + 1} / ${date.getFullYear()}`
+  );
+}
 
 obterDataAtual(date);
 
 // 1.2- Obter Hora Atual:
 let hours = new Date();
 
-     function obterHoraAtual(hours) {
-        console.log(`${hours.getHours() -3} :  ${hours.getMinutes()} :  ${hours.getSeconds()}`);
-     }
-     
-     obterHoraAtual(hours);
+function obterHoraAtual(hours) {
+  console.log(
+    `${hours.getHours() - 3} :  ${hours.getMinutes()} :  ${hours.getSeconds()}`
+  );
+}
+
+obterHoraAtual(hours);
