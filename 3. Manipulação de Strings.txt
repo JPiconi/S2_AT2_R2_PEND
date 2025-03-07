@@ -27,6 +27,20 @@ function ehPalindromo(texto) {
 
 console.log(ehPalindromo("omississimo"));
 
+////COMO REALMENTE ERA PARA TER SIDO
+//let texto = prompt("Digite uma frase: ")
+// function ehPalindromo(texto){
+//     textoLower = texto.toLowerCase();
+//     textoNoSpaces = textoLower.replace(/ /g, "");
+//     palindromo + textoNoSpaces.split("").reverse().join("");
+//     if(textoNoSpaces === palindromo){
+//         return texto + "É um Palindromo"
+//     }else{
+//         return texto + "Não é um Palindromo"
+//     }
+// }
+// console.log(ehPalindromo(texto))
+
 //outro modo que achei para verificação de Palíndromo
 
 let palavras = prompt('digte uma palavra para verificação: ');
