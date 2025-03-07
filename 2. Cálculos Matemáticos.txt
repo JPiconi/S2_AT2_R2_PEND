@@ -16,11 +16,11 @@ function  gerarNumeroAleatorio(min, max) {
 console.log(gerarNumeroAleatorio(0, 20));
 
 //2.3 fatorial
-function calcularFatorial(n) {
-  let fato = 1;
-  for (let i = n; i > 1; i--) {
-    fato *= i;
-  }
-  return fato;
+function calcularFatorial(number) {
+    let calc = 1;
+    for (let i = number; i >= 1; i--) {
+        calc *= i;
+    }
+    return calc;
 }
 console.log(calcularFatorial(5));
