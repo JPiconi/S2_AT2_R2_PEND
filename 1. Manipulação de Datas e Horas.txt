@@ -2,20 +2,16 @@
 let date = new Date();
 
 function obterDataAtual(date) {
-  console.log(
-    `${date.getDate()} / 0${date.getMonth() + 1} / ${date.getFullYear()}`
-  );
+    return `${date.getDate()}/0${date.getMonth() +1}/${date.getFullYear()}`;
+        // console.log(date.toLocaleDateString("pt-BR"))
 }
-
-obterDataAtual(date);
+console.log(obterDataAtual(date));
 
 // 1.2- Obter Hora Atual:
 let hours = new Date();
 
 function obterHoraAtual(hours) {
-  console.log(
-    `${hours.getHours() - 3} :  ${hours.getMinutes()} :  ${hours.getSeconds()}`
-  );
+    return `${hours.getHours() -3}:${hours.getMinutes()}:${hours.getSeconds()}`;
+    
 }
-
-obterHoraAtual(hours);
+console.log(obterHoraAtual(hours));
