@@ -1,10 +1,12 @@
 //3.1 Contar letras
 
-function contarLetras(texto) {
-  return texto.length;
+// let caso = prompt("Digite a frase!: ");
+function contarLetras(word){
+    // let NoSpaces = caso.replace(/ /g, "");
+    return NoSpaces.length;
 }
 
-console.log(contarLetras("Onibus"));
+console.log(contarLetras())
 
 // 3.2- Inverter String:
 function inverterString(texto) {
