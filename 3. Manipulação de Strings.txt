@@ -24,4 +24,20 @@ function ehPalindromo(texto) {
 }
 
 console.log(ehPalindromo("omississimo"));
-console.log(ehPalindromo("omississimo"));
+
+//outro modo que achei para verificação de Palíndromo
+
+let palavras = prompt('digte uma palavra para verificação: ');
+function ehPalindromo(palavras) {
+
+    let unwinding = palavras.length;
+    for (let i = 0; i < unwinding / 2; i++) {
+        if (palavras[i] !== palavras[unwinding - 1 - i]) {
+            return 'falso';
+        }
+    }
+    return 'verdadeiro';
+}
+console.log(ehPalindromo(palavras));
+
+
