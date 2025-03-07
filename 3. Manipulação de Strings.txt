@@ -1,0 +1,28 @@
+
+//3.1 Contar letras
+
+function contarLetras(texto){
+    return texto.length;
+}
+
+console.log(contarLetras("Onibus"))
+
+// 3.2- Inverter String:
+function inverterString(texto){
+    let reverso = [];
+    for (let i = texto.length - 1; i >= 0; i--) {
+        reverso += texto[i];
+    }
+    return reverso;
+}
+console.log(inverterString('carro'));
+
+//3.3 Verificar Palíndromo
+
+
+function ehPalindromo(texto) {
+    let inversao = texto.split('').reverse().join('');
+    return texto.toLowerCase() === inversao.toLowerCase();
+}
+
+console.log(ehPalindromo("omississimo"));

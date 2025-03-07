@@ -1,0 +1,25 @@
+
+// 2.1- Hipotenusa:
+function calcularHipotenusa(a, b){
+  return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+}
+
+console.log(calcularHipotenusa(4, 3));
+
+//2.2 numero aleatório
+
+function  gerarNumeroAleatorio(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+console.log(gerarNumeroAleatorio(0, 20));
+
+//2.3 fatorial
+function calcularFatorial(n) {
+    let fato = 1;
+    for (let i = n; i > 1; i--) {
+        fato *= i;
+    }
+    return fato;
+}
+console.log(calcularFatorial(5));
